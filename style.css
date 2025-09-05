@@ -1,0 +1,398 @@
+*{
+    margin:1px;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+
+}
+.navbar{
+    background-color:slateblue;
+    color: white;
+    display:flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo img{
+    width: 50px;
+    padding-right: 10px;
+
+}
+.home{
+    padding-left:100px;
+}
+.scroll{
+    position: absolute;
+    margin-top:80px;
+    font-size: 20px;
+    font-weight: bold;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name:soni;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgb(58, 156, 253), rgb(151, 46, 255), rgb(95, 0, 189));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  @keyframes soni {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      left: 40%;
+      top: 0px;
+    }
+  }
+.nav-links{
+    list-style:none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 100px;
+    
+}
+.user-menu{
+    position: relative;
+    padding-left: 100px;
+}
+.user-icon{
+    width:30px;
+    cursor:pointer;
+
+}
+.dropdown{
+    position: absolute;
+    top:35px;
+    right: 0;
+    display: none;
+    top:40px;
+    background:lightgray ;
+    border:1px solid lightgray;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+.user-menu:hover .dropdown{
+    display: flex;
+    background-color: dodgerblue;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    padding: 5px 0px;
+    text-decoration: none;
+
+}
+
+
+.dropdown a:hover{
+    color: blue;
+    background-color: lightgray;
+    
+
+}
+
+.user-menu:hover .dropdown{
+    display: block;
+}
+.hero{
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+
+.hero img{
+    max-width: 80%;
+    margin-top:20px;
+}
+#available-cars{
+    margin-top:100px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color:black;
+}
+.car-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+.car-card{
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   text-align: left;
+    box-sizing: border-box;
+   
+
+}
+.car-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.car-card h3{
+    margin: 5px 0;
+}
+.car-card p{
+    margin: 3px 0;
+}
+.car-card img{
+    width: 100%;
+    height:160px;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+    pointer-events: none;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.car-card:hover img{
+    transform: scale(1.1);
+}
+.Know-more{
+    margin-top: auto;
+    padding: 8px;
+    border:none;
+    background-color:tomato;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size:5px;
+    text-align: left;
+    width:120px;
+
+}
+.Know-more:hover{
+        cursor: pointer;
+        transform: translateY(2px);
+        transition: all ease-in-out 1s;
+        background-color: rgb(197, 142, 240);
+        color: rgb(0, 255, 255);
+}
+.photos{
+    font-size: 30px;
+    text-align: center;
+
+}
+.car-photos{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 20px;
+
+}
+.car{
+    
+   
+    border-radius: 10px;
+    height: 200px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.car img{
+    width: 100%;
+    height:100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+
+    object-fit: cover;
+}
+.car:hover img{
+    transform: scale(1.1);
+}
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+.conatct-image{
+    flex:1;
+    min-width:300px;
+    
+
+}
+.conatct-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.contact-image:hover img{
+    transform: scale(1.1);
+}
+.contact-form{
+    flex:1;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+
+
+}
+.contact-form h2{
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input,.contact-form textarea{
+    padding: 10px;
+    border:1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+ input:hover, textarea:hover{
+        border-color: orangered;
+}
+input:focus,textarea:focus{
+    border-color: orange;
+    outline: none;
+}
+.contact-form button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00bfff;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:120px;
+}
+.contact-form button:hover{
+    background-color:lightgray;
+    color: cyan;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brand img{
+    border-radius:5px;
+    width: 20px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-column h3{
+    color:blue;
+}
+.footer-column h4 {
+  color:#333;
+}
+
+.footer-column p,
+.footer-column ul li,
+.footer-column a {
+  color: #555;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #555;
+  font-size: 20px;
+}
+.social-icons img{
+    border-radius: 50%;
+    width:30px;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+
+  box-sizing: border-box;
+ 
+  
+}
+
+.email-box input {
+
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width:50px;
+  padding: 50px;
+  background-color: lightgray;
+  
+}
+
+.email-box input:hover {
+  border-color: orange;
+}
+
+.email-box button {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.email-box button i {
+  color: #f44336;
+  font-size: 16px;
+}
+button img{
+    border-radius: 50%;
+    width:40px;
+   
+}
